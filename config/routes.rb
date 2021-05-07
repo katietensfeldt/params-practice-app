@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/phrase" => "params#phrase"
+  get "/get_phrase/:phrase" => "params#phrase"
+
+  post "/get_a_new_phrase" => "params#phrase"
 end
